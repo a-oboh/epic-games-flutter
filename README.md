@@ -1,4 +1,4 @@
-# apple_music_clone
+# epic_games_ui
 
 A new Flutter project.
 

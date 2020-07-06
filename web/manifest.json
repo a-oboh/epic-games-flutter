@@ -1,6 +1,6 @@
 {
-    "name": "apple_music_clone",
-    "short_name": "apple_music_clone",
+    "name": "epic_games_ui",
+    "short_name": "epic_games_ui",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

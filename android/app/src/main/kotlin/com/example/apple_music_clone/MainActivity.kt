@@ -1,4 +1,4 @@
-package com.example.apple_music_clone
+package com.example.epic_games_ui
 
 import io.flutter.embedding.android.FlutterActivity
 
