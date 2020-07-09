@@ -1,16 +1,14 @@
-# epic_games_ui
+# Epic Games Flutter UI
 
-A new Flutter project.
+A flutter implementation of the Epic Games Concept Home Page by [Andrey Artamonov](https://dribbble.com/aai210).
 
-## Getting Started
+A screenshot:
 
-This project is a starting point for a Flutter application.
+![A test image](resources/epic-games-screenshot.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Getting Started 🚀
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- You need the [Flutter SDK](https://flutter.dev/docs/get-started/install) setup.
+- [You should setup your desktop environment to be able to run the code on desktop](https://flutter.dev/desktop).
+- Get packages with `$ flutter packages get`.
+- Run it `$ flutter run -d macos`, replace _macos_ with your platform.
