@@ -5,7 +5,6 @@ import 'package:epic_games_ui/UI/shared/margins.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:screen_utils/screen_utils.dart';
 import 'package:stacked/stacked.dart';
@@ -14,16 +13,12 @@ import 'package:epic_games_ui/extensions/size_extension.dart';
 import 'home_viewmodel.dart';
 
 class HomeView extends StatelessWidget {
-  TextTheme textTheme;
+  const HomeView();
 
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-
-    Adapt adapt = Adapt();
     Adapt.init(context);
-
-    textTheme = Theme.of(context).textTheme;
 
     return ViewModelBuilder<HomeViewModel>.reactive(
       builder: (context, model, child) {
@@ -45,7 +40,7 @@ class HomeView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     buildLeft(model),
-                    buildRight(model),
+                    buildRight(context, model),
                   ],
                 ),
               ),
@@ -57,7 +52,9 @@ class HomeView extends StatelessWidget {
     );
   }
 
-  Widget buildRight(HomeViewModel model) {
+  Widget buildRight(BuildContext context, HomeViewModel model) {
+    var textTheme = Theme.of(context).textTheme;
+
     return Material(
       color: Colors.transparent,
       textStyle: TextStyle(
@@ -371,7 +368,7 @@ class HomeView extends StatelessWidget {
                       ],
                     ),
                     Ymargin(10),
-                    buildNewsCard(),
+                    buildNewsCard(context),
                   ],
                 ),
               ),
@@ -729,7 +726,9 @@ class HomeView extends StatelessWidget {
     );
   }
 
-  Widget buildNewsCard() {
+  Widget buildNewsCard(BuildContext context) {
+    var textTheme = Theme.of(context).textTheme;
+
     return Stack(
       children: [
         Container(

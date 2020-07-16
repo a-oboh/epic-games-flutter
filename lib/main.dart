@@ -2,7 +2,6 @@ import 'package:epic_games_ui/UI/Views/home/home_view.dart';
 import 'package:epic_games_ui/UI/config/size_config.dart';
 import 'package:epic_games_ui/app/locator.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'package:screen_utils/screen_utils.dart';
 
@@ -38,14 +37,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
