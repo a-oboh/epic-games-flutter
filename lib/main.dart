@@ -1,7 +1,7 @@
 import 'package:epic_games_ui/UI/Views/home/home_view.dart';
 import 'package:epic_games_ui/UI/config/size_config.dart';
 import 'package:epic_games_ui/app/locator.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide Router;
 import 'package:stacked_services/stacked_services.dart';
 import 'package:screen_utils/screen_utils.dart';
 
